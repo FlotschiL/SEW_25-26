@@ -7,7 +7,7 @@ class Program
 {
     public static void Main()
     {
-        Diagramm.Start();
-        //ThreadClass.Start();
+        //Diagramm.Start();
+        ThreadClass.Start4Threads();
     }
 }
