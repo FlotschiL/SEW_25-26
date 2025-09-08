@@ -4,6 +4,38 @@ using System.Threading;
 namespace Multithreading_Example;
 class ThreadClass
 {
+    private static bool[] isPrime;
+
+    public static void StartDynamicThreads(int end, int threadCount)
+    {
+        isPrime = new bool[end + 1];
+        Array.Fill(isPrime, true);
+        
+        int range = (end + 1) / threadCount;
+        
+        Thread[] threads = new Thread[threadCount];
+        Stopwatch sw = Stopwatch.StartNew();
+        sw.Start();
+        for (int i = 0; i < threadCount; i++)
+        {
+            int localStart = i * range;
+            int localEnd = (i == threadCount - 1) ? end : i * range - 1;
+
+            threads[i] = new Thread(() =>
+            {
+                int count = CountPrimes(localStart, localEnd);
+                //Console.WriteLine($"[Thread {i+1}] Primzahlen von {localStart} bis {localEnd}: {count}, Zeit: {sw.Elapsed}");
+            });
+
+            threads[i].Start();
+        }
+
+        // Warten bis alle fertig sind
+        foreach (var t in threads)
+            t.Join();
+        sw.Stop();
+        Console.WriteLine($"Alle Threads fertig: {sw.ElapsedMilliseconds}");
+    }
     public static void Start2Threads()
     {
         Thread t1 = new Thread(() =>
@@ -88,10 +120,8 @@ class ThreadClass
         if (limit < 2 || start > limit) return 0;
         if (start < 2) start = 2;
 
-        bool[] isPrime = new bool[limit + 1];
-        Array.Fill(isPrime, true);
         isPrime[0] = isPrime[1] = false;
-
+        //int sqr = (int)Math.Sqrt(limit);
         for (int i = 2; i * i <= limit; i++)
         {
             if (isPrime[i])
@@ -109,6 +139,7 @@ class ThreadClass
             if (isPrime[i]) count++;
         }
 
+        Console.WriteLine(count);
         return count;
     }
 

@@ -10,6 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed135c54-45bc-42a1-940f-d081d65a93e3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Multithreading_Example/KillianThread.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Multithreading_Example/MachosThreadExample.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester1_25-26/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester1_25-26/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Multithreading_Example/Mulitthread.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Multithreading_Example/Mulitthread.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Multithreading_Example/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Multithreading_Example/Program.cs" afterDir="false" />
@@ -39,10 +41,13 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Multithreading_Example/Diagramm.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Multithreading_Example/KillianThread.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Multithreading_Example/MachosThreadExample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Multithreading_Example/Mulitthread.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Multithreading_Example/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Primzahlen/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -148,16 +153,29 @@
       <updated>1756964290969</updated>
       <workItem from="1756964292311" duration="4062000" />
       <workItem from="1757067197643" duration="1178000" />
-      <workItem from="1757333504656" duration="374000" />
+      <workItem from="1757333504656" duration="1361000" />
+      <workItem from="1757334985283" duration="2993000" />
     </task>
+    <task id="LOCAL-00001" summary="implemented Threading with 4 threads hardcoded">
+      <option name="closed" value="true" />
+      <created>1757333968973</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1757333968973</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="implemented Threading with 4 threads hardcoded" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented Threading with 4 threads hardcoded" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
