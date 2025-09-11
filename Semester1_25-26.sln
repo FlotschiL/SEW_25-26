@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semester1_25-26", "Semester
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multithreading_Example", "Multithreading_Example\Multithreading_Example.csproj", "{89062BAD-C004-4BDE-8F3A-026E38B489D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread-Safety", "Thread-Safety\Thread-Safety.csproj", "{D16F5B95-D598-4A9F-93DC-201BE3501C45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{89062BAD-C004-4BDE-8F3A-026E38B489D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89062BAD-C004-4BDE-8F3A-026E38B489D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89062BAD-C004-4BDE-8F3A-026E38B489D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D16F5B95-D598-4A9F-93DC-201BE3501C45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D16F5B95-D598-4A9F-93DC-201BE3501C45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D16F5B95-D598-4A9F-93DC-201BE3501C45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D16F5B95-D598-4A9F-93DC-201BE3501C45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

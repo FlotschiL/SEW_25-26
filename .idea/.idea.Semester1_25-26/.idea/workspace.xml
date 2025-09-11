@@ -10,11 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed135c54-45bc-42a1-940f-d081d65a93e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Multithreading_Example/KillianThread.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Multithreading_Example/MachosThreadExample.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester1_25-26/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester1_25-26/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Multithreading_Example/Mulitthread.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Multithreading_Example/Mulitthread.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Multithreading_Example/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Multithreading_Example/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,23 +52,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.Multithreading_Example.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/flo/Documents/GitHub/INSY_25-26",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.Multithreading_Example.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/flo/Documents/GitHub/INSY_25-26&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Project.Multithreading_Example">
     <configuration name="Multithreading_Example" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -143,6 +139,29 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Thread-Safety" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Thread-Safety/Thread-Safety.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -154,7 +173,7 @@
       <workItem from="1756964292311" duration="4062000" />
       <workItem from="1757067197643" duration="1178000" />
       <workItem from="1757333504656" duration="1361000" />
-      <workItem from="1757334985283" duration="2993000" />
+      <workItem from="1757334985283" duration="3312000" />
     </task>
     <task id="LOCAL-00001" summary="implemented Threading with 4 threads hardcoded">
       <option name="closed" value="true" />
@@ -164,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757333968973</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed Multithreading by comparing programs">
+      <option name="closed" value="true" />
+      <created>1757338283068</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1757338283068</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,7 +202,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="implemented Threading with 4 threads hardcoded" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented Threading with 4 threads hardcoded" />
+    <MESSAGE value="fixed Multithreading by comparing programs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed Multithreading by comparing programs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
