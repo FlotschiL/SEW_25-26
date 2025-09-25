@@ -4,15 +4,18 @@ using System.Text;
 namespace TrainSim;
 public class Railway
 {
-    private static Semaphore[] _semaphores;
+    private static List<Semaphore> _semaphores;
     private static int _semaphoreCount;
     private static int _trainCount;
     private static readonly int Length = 50;
-    private static List<int> StationPositions;
-    private static void LockStation(int StationIndex)
+    private static List<int> SectionPositions;
+    private static List<bool> SectionLocks;
+    private static void LockSection(int sectionIndex)
     {
-        Console.SetCursorPosition(StationPositions[StationIndex], 0);
-        Console.Write("+");
+        Console.SetCursorPosition(SectionPositions[sectionIndex-1]-1, 0);
+        SectionLocks[sectionIndex-1] = !SectionLocks[sectionIndex-1];
+        Console.Write(SectionLocks[sectionIndex-1] ? "🔒" : "🔓");
+        
     }
     public static void StartSim()
     {
@@ -23,8 +26,13 @@ public class Railway
         /*Console.WriteLine("Enter the number of Trains(default:1)");
         number = Console.ReadLine();
         _trainCount = number == ""  ? 1 : int.Parse(number);*/
+        _trainCount = 1;
         Console.Clear();
         Initialize();
+        for (int j = 0; j < _trainCount; j++)
+        {
+            
+        }
         int i = 0;
         do
         {
@@ -36,19 +44,19 @@ public class Railway
                 switch (key)
                 {
                     case ConsoleKey.D1:
-                        LockStation(1);
+                        LockSection(1);
                         break;
                     case ConsoleKey.D2:
-                        LockStation(2);
+                        LockSection(2);
                         break;
                     case ConsoleKey.D3:
-                        LockStation(3);
+                        LockSection(3);
                         break;
                     case ConsoleKey.D4:
-                        LockStation(4);
+                        LockSection(4);
                         break;
                     case ConsoleKey.D5:
-                        LockStation(5);
+                        LockSection(5);
                         break;
                 }
             }
@@ -62,29 +70,33 @@ public class Railway
     {
         StringBuilder sb = new StringBuilder();
         sb.Append('=', Length);
-        //Stations
-        string Stations = " ";
-        string StationNames = " ";
-        int spaceBetweenStations = Length/(_semaphoreCount + 1)+1;
-        StationPositions = new List<int>();
+        //Sections
+        string Sections = " ";
+        string SectionNames = " ";
+        int spaceBetweenSections = Length/(_semaphoreCount + 1)+1;
+        SectionPositions = new List<int>();
+        SectionLocks = new List<bool>();
+        _semaphores = new List<Semaphore>();
         for (int i = 1; i < Length; i++)
         {
-            if (i % spaceBetweenStations == 0)
+            if (i % spaceBetweenSections == 0)
             {
-                Stations = Stations.Substring(0, i - 1);
-                Stations += "-";
-                StationPositions.Add(i);
-                StationNames = StationNames.Substring(0, i - 2);
-                StationNames += "I(" + (i/spaceBetweenStations).ToString() + ")";
+                Sections = Sections.Substring(0, i - 1);
+                Sections += "🔒";
+                SectionPositions.Add(i);
+                SectionLocks.Add(true);
+                _semaphores.Add(new Semaphore(0, 1));
+                SectionNames = SectionNames.Substring(0, i - 2);
+                SectionNames += "I(" + (i/spaceBetweenSections).ToString() + ")";
             }
             else
             {
-                Stations += " ";
-                StationNames += " ";
+                Sections += " ";
+                SectionNames += " ";
             }
         }
 
-        Console.Write(Stations + "\n" + StationNames + "\n\n" + sb.ToString());
+        Console.Write(Sections + "\n" + SectionNames + "\n\n" + sb.ToString());
     }
     static void DrawTrainAt(int pos, int row, string train)
     {
