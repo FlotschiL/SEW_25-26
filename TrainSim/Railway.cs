@@ -8,11 +8,11 @@ public class Railway
     private static int _semaphoreCount;
     private static int _trainCount;
     private static readonly int Length = 50;
-    private static int[] StationPositions;
+    private static List<int> StationPositions;
     private static void LockStation(int StationIndex)
     {
-        Console.SetCursorPosition(StationIndex, 0);
-        Console.Write("Muh");
+        Console.SetCursorPosition(StationPositions[StationIndex], 0);
+        Console.Write("+");
     }
     public static void StartSim()
     {
@@ -33,7 +33,24 @@ public class Railway
                 var key = Console.ReadKey(true).Key;
                 if (key == ConsoleKey.Q) 
                     break; // Exit loop when 'q' key is pressed
-                // Handle other keys if needed
+                switch (key)
+                {
+                    case ConsoleKey.D1:
+                        LockStation(1);
+                        break;
+                    case ConsoleKey.D2:
+                        LockStation(2);
+                        break;
+                    case ConsoleKey.D3:
+                        LockStation(3);
+                        break;
+                    case ConsoleKey.D4:
+                        LockStation(4);
+                        break;
+                    case ConsoleKey.D5:
+                        LockStation(5);
+                        break;
+                }
             }
             EraseTrain(i-1, 3, 3);
             DrawTrainAt(i++, 3, "///");
@@ -49,13 +66,14 @@ public class Railway
         string Stations = " ";
         string StationNames = " ";
         int spaceBetweenStations = Length/(_semaphoreCount + 1)+1;
-        
+        StationPositions = new List<int>();
         for (int i = 1; i < Length; i++)
         {
             if (i % spaceBetweenStations == 0)
             {
                 Stations = Stations.Substring(0, i - 1);
                 Stations += "-";
+                StationPositions.Add(i);
                 StationNames = StationNames.Substring(0, i - 2);
                 StationNames += "I(" + (i/spaceBetweenStations).ToString() + ")";
             }
