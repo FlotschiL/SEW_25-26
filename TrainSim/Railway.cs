@@ -1,28 +1,30 @@
+using System.Globalization;
 using System.Text;
 
 namespace TrainSim;
 public class Railway
 {
-    Semaphore[] _semaphores = new Semaphore[1];
-    private int _semaphoreCount;
-    private int _trainCount;
-    private readonly int Length = 50;
-    public Railway()
+    private static Semaphore[] _semaphores;
+    private static int _semaphoreCount;
+    private static int _trainCount;
+    private static readonly int Length = 50;
+    private static int[] StationPositions;
+    private static void LockStation(int StationIndex)
     {
-        
+        Console.SetCursorPosition(StationIndex, 0);
+        Console.Write("Muh");
     }
-
-    public void StartSim()
+    public static void StartSim()
     {
 
-        Console.WriteLine("Enter the number of Sections(default: 10)");
+        Console.WriteLine("Enter the number of Sections(default: 1)");
         string number = Console.ReadLine();
-        _semaphoreCount = number == ""  ? 10 : int.Parse(number);
-        Console.WriteLine("Enter the number of Trains(default:1)");
+        _semaphoreCount = number == ""  ? 1 : int.Parse(number);
+        /*Console.WriteLine("Enter the number of Trains(default:1)");
         number = Console.ReadLine();
-        _trainCount = number == ""  ? 1 : int.Parse(number);
+        _trainCount = number == ""  ? 1 : int.Parse(number);*/
         Console.Clear();
-        Console.WriteLine(this);
+        Initialize();
         int i = 0;
         do
         {
@@ -39,13 +41,34 @@ public class Railway
             Thread.Sleep(500);
         } while (true);
     }
-    public override string ToString()
+    public static void Initialize()
     {
         StringBuilder sb = new StringBuilder();
         sb.Append('=', Length);
-        return "\n\n\n" + sb.ToString();
+        //Stations
+        string Stations = " ";
+        string StationNames = " ";
+        int spaceBetweenStations = Length/(_semaphoreCount + 1)+1;
+        
+        for (int i = 1; i < Length; i++)
+        {
+            if (i % spaceBetweenStations == 0)
+            {
+                Stations = Stations.Substring(0, i - 1);
+                Stations += "-";
+                StationNames = StationNames.Substring(0, i - 2);
+                StationNames += "I(" + (i/spaceBetweenStations).ToString() + ")";
+            }
+            else
+            {
+                Stations += " ";
+                StationNames += " ";
+            }
+        }
+
+        Console.Write(Stations + "\n" + StationNames + "\n\n" + sb.ToString());
     }
-    void DrawTrainAt(int pos, int row, string train)
+    static void DrawTrainAt(int pos, int row, string train)
     {
         int start = Math.Max(0, pos);
         int visible = Math.Min(train.Length, Length - start);
@@ -60,7 +83,7 @@ public class Railway
         catch { }
     }
 
-    void EraseTrain(int pos, int row, int length)
+    static void EraseTrain(int pos, int row, int length)
     {
         int start = Math.Max(0, pos);
         int visible = Math.Min(length, Length - start);

@@ -3,5 +3,4 @@
 using TrainSim;
 
 Console.WriteLine("Hello, World!");
-Railway railway =  new Railway();
-railway.StartSim();
+Railway.StartSim();
