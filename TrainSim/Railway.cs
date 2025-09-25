@@ -26,13 +26,31 @@ public class Railway
         /*Console.WriteLine("Enter the number of Trains(default:1)");
         number = Console.ReadLine();
         _trainCount = number == ""  ? 1 : int.Parse(number);*/
-        _trainCount = 1;
+        _trainCount = 2;
         Console.Clear();
         Initialize();
+        List<Thread> threads = new List<Thread>();
         for (int j = 0; j < _trainCount; j++)
         {
+            threads.Add(new Thread(() =>
+            {
+                int localj = j;
+                Thread.Sleep(localj*1000);
+                Console.Write("Starting");
+                int k = 0;
+                while (k < Length)
+                {
+                    if (true)
+                    {
+                        EraseTrain(k-1, 3, 3);
+                        DrawTrainAt(k++, 3, "///");
             
+                        Thread.Sleep(500);
+                    }
+                }
+            }));
         }
+        threads.ForEach(t => t.Start());
         int i = 0;
         do
         {
@@ -60,11 +78,8 @@ public class Railway
                         break;
                 }
             }
-            EraseTrain(i-1, 3, 3);
-            DrawTrainAt(i++, 3, "///");
-            
-            Thread.Sleep(500);
         } while (true);
+        threads.ForEach(t => t.Join());
     }
     public static void Initialize()
     {

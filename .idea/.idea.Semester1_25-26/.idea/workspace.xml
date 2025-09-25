@@ -12,7 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed135c54-45bc-42a1-940f-d081d65a93e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/TrainSim/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TrainSim/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrainSim/Railway.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TrainSim/Railway.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -208,7 +207,7 @@
       <workItem from="1757333504656" duration="1361000" />
       <workItem from="1757334985283" duration="3312000" />
       <workItem from="1757587550614" duration="458000" />
-      <workItem from="1758790085648" duration="3786000" />
+      <workItem from="1758790085648" duration="5082000" />
     </task>
     <task id="LOCAL-00001" summary="implemented Threading with 4 threads hardcoded">
       <option name="closed" value="true" />
@@ -266,7 +265,31 @@
       <option name="project" value="LOCAL" />
       <updated>1758792303299</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Changed to static">
+      <option name="closed" value="true" />
+      <created>1758793885731</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1758793885731</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Station Naming">
+      <option name="closed" value="true" />
+      <created>1758794129618</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1758794129618</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added Lock and Unlocking of threads">
+      <option name="closed" value="true" />
+      <created>1758794722816</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1758794722816</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +306,10 @@
     <MESSAGE value="Monitor test1" />
     <MESSAGE value="Added the base structure of My Trainsim" />
     <MESSAGE value="First working Train, without stations" />
-    <option name="LAST_COMMIT_MESSAGE" value="First working Train, without stations" />
+    <MESSAGE value="Changed to static" />
+    <MESSAGE value="Station Naming" />
+    <MESSAGE value="Added Lock and Unlocking of threads" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Lock and Unlocking of threads" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
