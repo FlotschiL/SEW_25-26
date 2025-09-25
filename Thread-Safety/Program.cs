@@ -1,7 +1,9 @@
-﻿new Thread(new ThreadStart(() => Spieler1())).Start();
-new Thread(new ThreadStart(() => Spieler2())).Start();
+﻿
 object ping = new object();
 object pong = new object();
+new Thread(new ThreadStart(() => Spieler1())).Start();
+new Thread(new ThreadStart(() => Spieler2())).Start();
+
 void Spieler1()
 {
     while (true)

@@ -5,12 +5,19 @@
     <projectFile>Primzahlen/Primzahlen.csproj</projectFile>
     <projectFile>Semester1_25-26/Semester1_25-26.csproj</projectFile>
     <projectFile>Thread-Safety/Thread-Safety.csproj</projectFile>
+    <projectFile>TrainSim/TrainSim.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed135c54-45bc-42a1-940f-d081d65a93e3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Thread-Safety/Ping.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainSim/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainSim/Railway.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainSim/TrainSim.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester1_25-26/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester1_25-26/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester1_25-26.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Semester1_25-26.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Thread-Safety/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Thread-Safety/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +50,10 @@
     <setting file="file://$PROJECT_DIR$/Multithreading_Example/Mulitthread.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Multithreading_Example/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Primzahlen/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Thread-Safety/Ping.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Thread-Safety/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TrainSim/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TrainSim/Railway.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -58,6 +68,7 @@
   "keyToString": {
     ".NET Project.Multithreading_Example.executor": "Run",
     ".NET Project.Thread-Safety.executor": "Run",
+    ".NET Project.TrainSim.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -72,7 +83,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.Thread-Safety">
+  <component name="RunManager" selected=".NET Project.TrainSim">
     <configuration name="Multithreading_Example" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -165,6 +176,29 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="TrainSim" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/TrainSim/TrainSim.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -177,7 +211,8 @@
       <workItem from="1757067197643" duration="1178000" />
       <workItem from="1757333504656" duration="1361000" />
       <workItem from="1757334985283" duration="3312000" />
-      <workItem from="1757587550614" duration="346000" />
+      <workItem from="1757587550614" duration="458000" />
+      <workItem from="1758790085648" duration="967000" />
     </task>
     <task id="LOCAL-00001" summary="implemented Threading with 4 threads hardcoded">
       <option name="closed" value="true" />
@@ -203,7 +238,23 @@
       <option name="project" value="LOCAL" />
       <updated>1757587662653</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="thread locker test">
+      <option name="closed" value="true" />
+      <created>1757587922105</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1757587922105</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Monitor test1">
+      <option name="closed" value="true" />
+      <created>1757587943820</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1757587943820</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +267,9 @@
     <MESSAGE value="implemented Threading with 4 threads hardcoded" />
     <MESSAGE value="fixed Multithreading by comparing programs" />
     <MESSAGE value="added the last functionality to count the matched numbers" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the last functionality to count the matched numbers" />
+    <MESSAGE value="thread locker test" />
+    <MESSAGE value="Monitor test1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Monitor test1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
