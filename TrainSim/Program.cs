@@ -3,4 +3,4 @@
 using TrainSim;
 
 Console.WriteLine("Hello, World!");
-Railway.StartSim();
+GPTWay.StartSim();

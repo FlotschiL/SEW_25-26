@@ -4,12 +4,13 @@ using System.Text;
 namespace TrainSim;
 public class Railway
 {
-    private static List<Semaphore> _semaphores;
+    private static SemaphoreSlim[] _semaphores;
     private static int _semaphoreCount;
     private static int _trainCount;
     private static readonly int Length = 50;
     private static List<int> SectionPositions;
     private static List<bool> SectionLocks;
+    private static int spaceBetweenSections;
     private static void LockSection(int sectionIndex)
     {
         Console.SetCursorPosition(SectionPositions[sectionIndex-1]-1, 0);
@@ -20,9 +21,9 @@ public class Railway
     public static void StartSim()
     {
 
-        Console.WriteLine("Enter the number of Sections(default: 1)");
+        Console.WriteLine("Enter the number of Sections(default: 5)");
         string number = Console.ReadLine();
-        _semaphoreCount = number == ""  ? 1 : int.Parse(number);
+        _semaphoreCount = number == ""  ? 5: int.Parse(number);
         /*Console.WriteLine("Enter the number of Trains(default:1)");
         number = Console.ReadLine();
         _trainCount = number == ""  ? 1 : int.Parse(number);*/
@@ -34,19 +35,21 @@ public class Railway
         {
             threads.Add(new Thread(() =>
             {
-                int localj = j;
-                Thread.Sleep(localj*1000);
-                Console.Write("Starting");
+                Thread.Sleep(new Random().Next(100, 5000));
+                //Console.Write("Starting");
                 int k = 0;
+                int currentSection = 0;
                 while (k < Length)
                 {
-                    if (true)
+                    if (SectionPositions.Contains(k))
                     {
-                        EraseTrain(k-1, 3, 3);
-                        DrawTrainAt(k++, 3, "///");
-            
-                        Thread.Sleep(500);
+                        _semaphores[currentSection].Release();
+                        _semaphores[++currentSection].Wait();
                     }
+                    EraseTrain(k-1, 3, 3);
+                    DrawTrainAt(k++, 3, "///");
+                    Thread.Sleep(500);
+                    
                 }
             }));
         }
@@ -88,10 +91,10 @@ public class Railway
         //Sections
         string Sections = " ";
         string SectionNames = " ";
-        int spaceBetweenSections = Length/(_semaphoreCount + 1)+1;
+        spaceBetweenSections = Length/(_semaphoreCount + 1)+1;
         SectionPositions = new List<int>();
         SectionLocks = new List<bool>();
-        _semaphores = new List<Semaphore>();
+        _semaphores = new SemaphoreSlim[_semaphoreCount];
         for (int i = 1; i < Length; i++)
         {
             if (i % spaceBetweenSections == 0)
@@ -100,7 +103,7 @@ public class Railway
                 Sections += "🔒";
                 SectionPositions.Add(i);
                 SectionLocks.Add(true);
-                _semaphores.Add(new Semaphore(0, 1));
+                _semaphores[i/spaceBetweenSections-1] = (new SemaphoreSlim(0, _trainCount));
                 SectionNames = SectionNames.Substring(0, i - 2);
                 SectionNames += "I(" + (i/spaceBetweenSections).ToString() + ")";
             }
