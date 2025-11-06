@@ -84,7 +84,18 @@
         }
     }
 
+    private async Task Button4_Click()
+    {
+        Label2Text = "..loading..";
+        StateHasChanged();
 
+        if (int.TryParse(InputNumber, out int upto))
+        {
+            int result = 0;
+            await Task.Run(() => Sieve(upto, out result));
+            Label2Text = result.ToString();
+        }
+    }
 
 
     public void Sieve(int n, out int result)
