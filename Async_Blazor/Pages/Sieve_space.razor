@@ -25,5 +25,26 @@
 </div>
 
 @code {
+    private string InputText1 { get; set; } = string.Empty;
+    private string Label1Text { get; set; } = string.Empty;
+
+    private string InputNumber { get; set; } = "100000";
+    private string Label2Text { get; set; } = string.Empty;
+
+    private void Button1_Click()
+    {
+        Label2Text = "..loading..";
+        StateHasChanged();
+
+        if (int.TryParse(InputNumber, out int upto))
+        {
+            Sieve(upto, out int result);
+            Label2Text = result.ToString();
+        }
+        else
+        {
+            Label2Text = "Invalid input";
+        }
+    }
 
 }
