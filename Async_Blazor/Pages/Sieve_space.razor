@@ -61,6 +61,30 @@
             Label2Text = result.ToString();
         }
     }
+    private void Button3_Click()
+    {
+        Label2Text = "..loading..";
+        StateHasChanged();
+
+        if (int.TryParse(InputNumber, out int upto))
+        {
+            int result = 0;
+            BackgroundWorker worker = new BackgroundWorker();
+            worker.DoWork += (s, e) =>
+            {
+                Sieve(upto, out result);
+                e.Result = result;
+            };
+            worker.RunWorkerCompleted += (s, e) =>
+            {
+                Label2Text = e.Result?.ToString() ?? "Error";
+                InvokeAsync(StateHasChanged);
+            };
+            worker.RunWorkerAsync();
+        }
+    }
+
+
 
 
     public void Sieve(int n, out int result)
