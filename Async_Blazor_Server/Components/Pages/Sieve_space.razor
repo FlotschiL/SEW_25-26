@@ -1,0 +1,121 @@
+@page "/sieve"
+@using System.ComponentModel
+
+<h3>Prime Counter Demo</h3>
+
+<div class="mb-3">
+    <label>Textbox 1: </label>
+    <input @bind="InputText1" @bind:event="oninput" class="form-control" />
+</div>
+
+<p><b>Label 1:</b> @Label1Text</p>
+
+<div class="mb-3">
+    <label>Upto (n): </label>
+    <input @bind="InputNumber" type="number" class="form-control" />
+</div>
+
+<p><b>Label 2:</b> @Label2Text</p>
+
+<div class="btn-group">
+    <button class="btn btn-primary" @onclick="Button1_Click">Run Sync</button>
+    <button class="btn btn-secondary" @onclick="Button2_Click">Run Thread</button>
+    <button class="btn btn-warning" @onclick="Button3_Click">Run BackgroundWorker</button>
+    <button class="btn btn-success" @onclick="Button4_Click">Run Async</button>
+</div>
+
+@code {
+    private string InputText1 { get; set; } = string.Empty;
+    private string Label1Text { get; set; } = string.Empty;
+
+    private string InputNumber { get; set; } = "100000";
+    private string Label2Text { get; set; } = string.Empty;
+
+    private void Button1_Click()
+    {
+        Label2Text = "..loading..";
+        StateHasChanged();
+
+        if (int.TryParse(InputNumber, out int upto))
+        {
+            Sieve(upto, out int result);
+            Label2Text = result.ToString();
+        }
+        else
+        {
+            Label2Text = "Invalid input";
+        }
+    }
+
+    private void Button2_Click()
+    {
+        Label2Text = "..loading..";
+        StateHasChanged();
+
+        if (int.TryParse(InputNumber, out int upto))
+        {
+            int result = 0;
+            Thread t = new Thread(() => Sieve(upto, out result));
+            t.Start();
+            t.Join();
+            Label2Text = result.ToString();
+        }
+    }
+    private void Button3_Click()
+    {
+        Label2Text = "..loading..";
+        StateHasChanged();
+
+        if (int.TryParse(InputNumber, out int upto))
+        {
+            int result = 0;
+            BackgroundWorker worker = new BackgroundWorker();
+            worker.DoWork += (s, e) =>
+            {
+                Sieve(upto, out result);
+                e.Result = result;
+            };
+            worker.RunWorkerCompleted += (s, e) =>
+            {
+                Label2Text = e.Result?.ToString() ?? "Error";
+                InvokeAsync(StateHasChanged);
+            };
+            worker.RunWorkerAsync();
+        }
+    }
+
+    private async Task Button4_Click()
+    {
+        Label2Text = "..loading..";
+        StateHasChanged();
+
+        if (int.TryParse(InputNumber, out int upto))
+        {
+            int result = 0;
+            await Task.Run(() => Sieve(upto, out result));
+            Label2Text = result.ToString();
+        }
+    }
+
+    public void Sieve(int n, out int result)
+    {
+        bool[] isPrime = new bool[n + 1];
+        for (int i = 2; i <= n; i++)
+        {
+            isPrime[i] = true;
+        }
+
+        for (int i = 2; i * i <= n; i++)
+        {
+            if (isPrime[i])
+            {
+                for (int j = i * i; j <= n; j += i)
+                {
+                    isPrime[j] = false;
+                }
+            }
+        }
+
+        result = isPrime.Count(x => x);
+    }
+}
