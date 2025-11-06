@@ -1,0 +1,29 @@
+@page "/sieve"
+@using System.ComponentModel
+
+<h3>Prime Counter Demo</h3>
+
+<div class="mb-3">
+    <label>Textbox 1: </label>
+    <input @bind="InputText1" @bind:event="oninput" class="form-control" />
+</div>
+
+<p><b>Label 1:</b> @Label1Text</p>
+
+<div class="mb-3">
+    <label>Upto (n): </label>
+    <input @bind="InputNumber" type="number" class="form-control" />
+</div>
+
+<p><b>Label 2:</b> @Label2Text</p>
+
+<div class="btn-group">
+    <button class="btn btn-primary" @onclick="Button1_Click">Run Sync</button>
+    <button class="btn btn-secondary" @onclick="Button2_Click">Run Thread</button>
+    <button class="btn btn-warning" @onclick="Button3_Click">Run BackgroundWorker</button>
+    <button class="btn btn-success" @onclick="Button4_Click">Run Async</button>
+</div>
+
+@code {
+
+}
