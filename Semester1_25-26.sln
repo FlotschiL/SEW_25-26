@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread-Safety", "Thread-Saf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainSim", "TrainSim\TrainSim.csproj", "{14B1442C-B4EF-4DB7-BEC9-2E1830017D0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async_Blazor", "Async_Blazor\Async_Blazor.csproj", "{853C2DBC-B3DC-48A4-A49A-536A46520A85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{14B1442C-B4EF-4DB7-BEC9-2E1830017D0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14B1442C-B4EF-4DB7-BEC9-2E1830017D0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14B1442C-B4EF-4DB7-BEC9-2E1830017D0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{853C2DBC-B3DC-48A4-A49A-536A46520A85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{853C2DBC-B3DC-48A4-A49A-536A46520A85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{853C2DBC-B3DC-48A4-A49A-536A46520A85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{853C2DBC-B3DC-48A4-A49A-536A46520A85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
