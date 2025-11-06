@@ -13,72 +13,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed135c54-45bc-42a1-940f-d081d65a93e3" name="Changes" comment="Created the Blazor project">
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/App.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/Async_Blazor.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/Layout/MainLayout.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/Layout/MainLayout.razor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/Layout/NavMenu.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/Layout/NavMenu.razor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/Pages/Counter.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/Pages/Home.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/Pages/Weather.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/Pages/sieve.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/_Imports.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/icon-192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor/wwwroot/sample-data/weather.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester1_25-26/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester1_25-26/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester1_25-26.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Semester1_25-26.sln" afterDir="false" />
-    </list>
+    <list default="true" id="ed135c54-45bc-42a1-940f-d081d65a93e3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +40,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/729d9a4cc4d14fd8892315623acbb0ffe26400/06/009d9901/SemaphoreSlim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/729d9a4cc4d14fd8892315623acbb0ffe26400/2d/716a8f4c/CastHelpers.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Async_Blazor/Pages/sieve.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Async_Blazor/Pages/Sieve_space.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/flo/Documents/GitHub/SEW_25-26/Async_Blazor/Pages/Sieve_space.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Multithreading_Example/Diagramm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Multithreading_Example/KillianThread.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Multithreading_Example/MachosThreadExample.cs" root0="FORCE_HIGHLIGHTING" />
@@ -430,7 +366,7 @@
       <workItem from="1759752671055" duration="3206000" />
       <workItem from="1760005218522" duration="2996000" />
       <workItem from="1762426032043" duration="701000" />
-      <workItem from="1762426762886" duration="1328000" />
+      <workItem from="1762426762886" duration="1643000" />
     </task>
     <task id="LOCAL-00001" summary="implemented Threading with 4 threads hardcoded">
       <option name="closed" value="true" />
@@ -544,7 +480,31 @@
       <option name="project" value="LOCAL" />
       <updated>1760005410558</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Created the Blazor project">
+      <option name="closed" value="true" />
+      <created>1762428343106</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1762428343106</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added UI">
+      <option name="closed" value="true" />
+      <created>1762428368556</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1762428368556</updated>
+    </task>
+    <task id="LOCAL-00017" summary="added variables and Sync mode">
+      <option name="closed" value="true" />
+      <created>1762428409352</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1762428409352</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,7 +529,9 @@
     <MESSAGE value="redid my approach, cleaner, simpler" />
     <MESSAGE value="gpt railway" />
     <MESSAGE value="Created the Blazor project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the Blazor project" />
+    <MESSAGE value="added UI" />
+    <MESSAGE value="added variables and Sync mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="added variables and Sync mode" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
