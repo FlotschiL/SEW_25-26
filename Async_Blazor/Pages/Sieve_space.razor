@@ -47,6 +47,21 @@
         }
     }
 
+    private void Button2_Click()
+    {
+        Label2Text = "..loading..";
+        StateHasChanged();
+
+        if (int.TryParse(InputNumber, out int upto))
+        {
+            int result = 0;
+            Thread t = new Thread(() => Sieve(upto, out result));
+            t.Start();
+            t.Join();
+            Label2Text = result.ToString();
+        }
+    }
+
 
     public void Sieve(int n, out int result)
     {
