@@ -16,9 +16,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed135c54-45bc-42a1-940f-d081d65a93e3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Async_Blazor_Server/Components/Pages/Machine_Space.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Async_Blazor_Server/Components/Pages/Machine_Space_console.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Async_Blazor_Server/wwwroot/construction.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Async_Blazor_Server/wwwroot/drilling.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Async_Blazor_Server/wwwroot/industrial-robot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Async_Blazor_Server/wwwroot/storage.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester1_25-26/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester1_25-26/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Async_Blazor/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Async_Blazor/_Imports.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Async_Blazor/Pages/Sieve_space.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Async_Blazor/Pages/Sieve_space.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Async_Blazor/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Async_Blazor/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Async_Blazor_Server/Components/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Async_Blazor_Server/Components/Layout/NavMenu.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Async_Blazor_Server/Components/Pages/Sieve_space.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Async_Blazor_Server/Components/Pages/Sieve_space.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Async_Blazor_Server/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Async_Blazor_Server/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +55,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/729d9a4cc4d14fd8892315623acbb0ffe26400/06/009d9901/SemaphoreSlim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/729d9a4cc4d14fd8892315623acbb0ffe26400/2d/716a8f4c/CastHelpers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ecbc3d65bb0342a3883ed0ba79dac3a763000/80/d74b0114/RenderMode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Async_Blazor/Layout/NavMenu.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Async_Blazor/Pages/Sieve_space.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="mock:///home/flo/Documents/GitHub/SEW_25-26/Async_Blazor/Pages/Sieve_space.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
@@ -74,27 +84,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.Async_Blazor: http.executor": "Run",
-    ".NET Launch Settings Profile.Async_Blazor_Server: http.executor": "Run",
-    ".NET Project.Multithreading_Example.executor": "Run",
-    ".NET Project.Thread-Safety.executor": "Run",
-    ".NET Project.TrainSim.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/flo/Documents/GitHub/INSY_25-26",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.Async_Blazor: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Async_Blazor_Server: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.Multithreading_Example.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.Thread-Safety.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.TrainSim.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/flo/Documents/GitHub/INSY_25-26&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Async_Blazor_Server: http">
     <configuration name="Multithreading_Example" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -408,7 +418,9 @@
       <workItem from="1759752671055" duration="3206000" />
       <workItem from="1760005218522" duration="2996000" />
       <workItem from="1762426032043" duration="701000" />
-      <workItem from="1762426762886" duration="2689000" />
+      <workItem from="1762426762886" duration="2977000" />
+      <workItem from="1762779815112" duration="5512000" />
+      <workItem from="1763026440362" duration="2894000" />
     </task>
     <task id="LOCAL-00001" summary="implemented Threading with 4 threads hardcoded">
       <option name="closed" value="true" />
@@ -602,7 +614,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762429010212</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="fixed by changing the rendermode - all run independetly">
+      <option name="closed" value="true" />
+      <created>1762429634230</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1762429634230</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,7 +656,8 @@
     <MESSAGE value="not working =&gt; standalone not working with async" />
     <MESSAGE value="added the blazor server" />
     <MESSAGE value="copied the files" />
-    <option name="LAST_COMMIT_MESSAGE" value="copied the files" />
+    <MESSAGE value="fixed by changing the rendermode - all run independetly" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed by changing the rendermode - all run independetly" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,0 +1,158 @@
+@page "/machineAnimation"
+@using System.Reflection.PortableExecutable
+@using System.Threading
+@rendermode InteractiveServer
+
+<h2 class="text-xl mb-2">Prozess-Simulation</h2>
+
+<div class="sim-area">
+    <img class="storage" src="storage.png" />
+    <img class="machineA @(machineAWorking ? "working" : "")" src="drilling.png" />
+    <img class="machineB @(machineBWorking ? "working" : "")" src="industrial-robot.png" />
+    <img class="crane" style="left:@craneXpx" src="construction.png" />
+</div>
+
+<button class="mt-3 p-2 bg-blue-600 text-white rounded" @onclick="StartSim">Start Simulation</button>
+
+@code {
+    public string TextLabel1 = "Bereit";
+
+    // === Semaphore coordination ===
+    static SemaphoreSlim semCrane;
+    static SemaphoreSlim semA;
+    static SemaphoreSlim semB;
+    static SemaphoreSlim semReturn;
+
+    // === Visual State ===
+    bool machineAWorking = false;
+    bool machineBWorking = false;
+    string craneXpx = "0px";
+
+    async Task StartSim()
+    {
+        var crane = new Crane(this);
+        var a = new MachineA(this);
+        var b = new MachineB(this);
+        semCrane = new(1, 1);
+        semA = new(0, 1);
+        semB = new(0, 1);
+        semReturn = new(0, 1);
+        _ = Task.Run(() => crane.Run());
+        _ = Task.Run(() => a.Run());
+        _ = Task.Run(() => b.Run());
+    }
+
+    // === MachineA ===
+    public class MachineA
+    {
+        private readonly Machine_Space ui;
+        public MachineA(dynamic ui) => this.ui = ui;
+
+        public async Task Run()
+        {
+            while (true)
+            {
+                await semA.WaitAsync();
+                await Process();
+                Console.WriteLine("MachineA done");
+                semCrane.Release();
+            }
+        }
+
+        private async Task Process()
+        {
+            ui.machineAWorking = true;
+            ui.InvokeAsync(ui.StateHasChanged);        
+            await Task.Delay(1000); // simulate processing
+            ui.machineAWorking = false;
+            ui.InvokeAsync(ui.StateHasChanged);        
+        }
+    }
+
+    // === MachineB ===
+    public class MachineB(Machine_Space ui)
+    {
+        public async Task Run()
+        {
+            while (true)
+            {
+                await semB.WaitAsync();
+                await Process();
+                Console.WriteLine("MachineB done");
+                semReturn.Release();
+            }
+        }
+
+        private async Task Process()
+        {
+            ui.machineBWorking = true;
+            ui.InvokeAsync(ui.StateHasChanged);        
+            await Task.Delay(1500);
+            ui.machineBWorking = false;
+            ui.InvokeAsync(ui.StateHasChanged);        
+        }
+    }
+
+    // === Crane ===
+    public class Crane(Machine_Space ui)
+    {
+        public async Task Run()
+        {
+            await semCrane.WaitAsync();
+            await Move("Storage", "MachineA", "180px");
+            semA.Release();
+
+            await semCrane.WaitAsync();
+            await Move("MachineA", "MachineB", "325px");
+            semB.Release();
+
+            await semReturn.WaitAsync();
+            await Move("MachineB", "Storage", "0px");
+            semCrane.Release();
+        }
+
+        public async Task Move(string from, string to, string newX)
+        {
+            Console.WriteLine($"Crane moving {from} -> {to}");
+            ui.craneXpx = newX;
+            try
+            {
+                ui.InvokeAsync(ui.StateHasChanged);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            await Task.Delay(800); // visual move time
+        }
+    }
+}
+
+<style>
+.sim-area {
+    position: relative;
+    width: 400px;
+    height: 180px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.sim-area img {
+    width: 60px;
+    transition: all 0.8s ease;
+}
+.machineA.working, .machineB.working {
+    filter: drop-shadow(0 0 10px lime);
+    transform: scale(1.1);
+}
+.crane {
+    position: absolute;
+    top: 10px;
+    width: 70px;
+    transition: all 0.8s ease;
+}
+</style>

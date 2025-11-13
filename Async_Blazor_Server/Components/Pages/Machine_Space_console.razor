@@ -1,0 +1,90 @@
+@page "/machine"
+@using System.Threading
+@rendermode InteractiveServer
+
+<h2>Hallo</h2>
+<label>@TextLabel1</label>
+<button @onclick="startSim">Start sim</button>
+
+@code {
+    public string TextLabel1 = "Bereit";
+
+    // === Shared Semaphores ===
+    static SemaphoreSlim semCrane = new(1, 1);
+    static SemaphoreSlim semA = new(0, 1);
+    static SemaphoreSlim semB = new(0, 1);
+    static SemaphoreSlim semReturn = new(0, 1);
+
+    void startSim()
+    {
+        TextLabel1 = "Simulation läuft...";
+
+        var crane = new Crane();
+        var a = new MachineA();
+        var b = new MachineB();
+
+        new Thread(() => crane.Run()).Start();
+        new Thread(() => a.Run()).Start();
+        new Thread(() => b.Run()).Start();
+    }
+
+    // === MachineA ===
+    public class MachineA
+    {
+        public void Run()
+        {
+            while (true)
+            {
+                semA.Wait();
+                Process();
+                Console.WriteLine("MachineA done");
+                semCrane.Release();
+            }
+        }
+
+        private void Process()
+        {
+            Thread.Sleep(100);
+        }
+    }
+
+    // === MachineB ===
+    public class MachineB
+    {
+        public void Run()
+        {
+            while (true)
+            {
+                semB.Wait();
+                Process();
+                Console.WriteLine("MachineB done\n-----------------------");
+                semReturn.Release();
+            }
+        }
+
+        private void Process()
+        {
+            Thread.Sleep(150);
+        }
+    }
+
+    // === Crane ===
+    public class Crane
+    {
+        public void Run()
+        {
+            while (true)
+            {
+                semCrane.Wait(); Move("Storage", "MachineA"); semA.Release();
+                semCrane.Wait(); Move("MachineA", "MachineB"); semB.Release();
+                semReturn.Wait(); Move("MachineB", "Storage2"); semCrane.Release();
+            }
+        }
+
+        private void Move(string from, string to)
+        {
+            Thread.Sleep(200);
+            Console.WriteLine($"Crane moving {from} -> {to}");
+        }
+    }
+}
