@@ -45,7 +45,7 @@
     // === MachineA ===
     public class MachineA
     {
-        private readonly Machine_Space ui;
+        private readonly Machine_Space_Better ui;
         public MachineA(dynamic ui) => this.ui = ui;
 
         public async Task Run()
@@ -70,7 +70,7 @@
     }
 
     // === MachineB ===
-    public class MachineB(Machine_Space ui)
+    public class MachineB(Machine_Space_Better ui)
     {
         public async Task Run()
         {
@@ -94,7 +94,7 @@
     }
 
     // === Crane ===
-    public class Crane(Machine_Space ui)
+    public class Crane(Machine_Space_Better ui)
     {
         public async Task Run()
         {

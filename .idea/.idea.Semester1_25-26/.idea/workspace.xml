@@ -16,18 +16,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed135c54-45bc-42a1-940f-d081d65a93e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Async_Blazor_Server/Components/Pages/Machine_Space.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor_Server/Components/Pages/Machine_Space_console.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor_Server/wwwroot/construction.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor_Server/wwwroot/drilling.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor_Server/wwwroot/industrial-robot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Async_Blazor_Server/wwwroot/storage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Async_Blazor_Server/Components/Pages/Machine_Space_Better.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester1_25-26/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester1_25-26/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Async_Blazor/Pages/Sieve_space.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Async_Blazor/Pages/Sieve_space.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Async_Blazor/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Async_Blazor/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Async_Blazor_Server/Components/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Async_Blazor_Server/Components/Layout/NavMenu.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Async_Blazor_Server/Components/Pages/Sieve_space.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Async_Blazor_Server/Components/Pages/Sieve_space.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Async_Blazor_Server/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Async_Blazor_Server/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Async_Blazor_Server/Components/Pages/Machine_Space.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Async_Blazor_Server/Components/Pages/Machine_Space.razor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +49,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ecbc3d65bb0342a3883ed0ba79dac3a763000/80/d74b0114/RenderMode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Async_Blazor/Layout/NavMenu.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Async_Blazor/Pages/Sieve_space.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///home/flo/Documents/GitHub/SEW_25-26/Async_Blazor/Pages/Sieve_space.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///home/flo/Documents/GitHub/SEW_25-26/Async_Blazor/Pages/Sieve_space.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Async_Blazor/_Imports.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Async_Blazor_Server/Components/Pages/Machine_Space_Better.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Multithreading_Example/Diagramm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Multithreading_Example/KillianThread.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Multithreading_Example/MachosThreadExample.cs" root0="FORCE_HIGHLIGHTING" />
@@ -420,7 +410,8 @@
       <workItem from="1762426032043" duration="701000" />
       <workItem from="1762426762886" duration="2977000" />
       <workItem from="1762779815112" duration="5512000" />
-      <workItem from="1763026440362" duration="2894000" />
+      <workItem from="1763026440362" duration="3322000" />
+      <workItem from="1763384727295" duration="1186000" />
     </task>
     <task id="LOCAL-00001" summary="implemented Threading with 4 threads hardcoded">
       <option name="closed" value="true" />
@@ -622,7 +613,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762429634230</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="working simulation">
+      <option name="closed" value="true" />
+      <created>1763029345731</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1763029345731</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -632,7 +631,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="implemented Threading with 4 threads hardcoded" />
     <MESSAGE value="fixed Multithreading by comparing programs" />
     <MESSAGE value="added the last functionality to count the matched numbers" />
     <MESSAGE value="thread locker test" />
@@ -657,7 +655,8 @@
     <MESSAGE value="added the blazor server" />
     <MESSAGE value="copied the files" />
     <MESSAGE value="fixed by changing the rendermode - all run independetly" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed by changing the rendermode - all run independetly" />
+    <MESSAGE value="working simulation" />
+    <option name="LAST_COMMIT_MESSAGE" value="working simulation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
