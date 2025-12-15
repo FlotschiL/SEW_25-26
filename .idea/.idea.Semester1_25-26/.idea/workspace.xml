@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed135c54-45bc-42a1-940f-d081d65a93e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Socket_Sender/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Socket_Sender/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Socket_Sender/FirstSocket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sockets/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sockets/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +60,7 @@
     <setting file="file://$PROJECT_DIR$/Multithreading_Example/Mulitthread.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Multithreading_Example/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Primzahlen/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Socket_Sender/FirstSocket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Thread-Safety/Ping.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Thread-Safety/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TrainSim/GPT_Railway.cs" root0="FORCE_HIGHLIGHTING" />
@@ -480,7 +482,7 @@
       <workItem from="1763384727295" duration="2648000" />
       <workItem from="1763638302080" duration="615000" />
       <workItem from="1765450708989" duration="163000" />
-      <workItem from="1765802420024" duration="319000" />
+      <workItem from="1765802420024" duration="682000" />
     </task>
     <task id="LOCAL-00001" summary="implemented Threading with 4 threads hardcoded">
       <option name="closed" value="true" />
@@ -714,7 +716,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765802609704</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="implemented variable messages">
+      <option name="closed" value="true" />
+      <created>1765802919090</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1765802919090</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -724,7 +734,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Monitor test1" />
     <MESSAGE value="Added the base structure of My Trainsim" />
     <MESSAGE value="First working Train, without stations" />
     <MESSAGE value="Changed to static" />
@@ -749,7 +758,8 @@
     <MESSAGE value="starting work on a better animation" />
     <MESSAGE value="added the two socket projects" />
     <MESSAGE value="added first code" />
-    <option name="LAST_COMMIT_MESSAGE" value="added first code" />
+    <MESSAGE value="implemented variable messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented variable messages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
