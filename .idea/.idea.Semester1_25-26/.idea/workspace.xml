@@ -8,6 +8,10 @@
     <projectFile>Multithreading_Example/Multithreading_Example.csproj</projectFile>
     <projectFile>Primzahlen/Primzahlen.csproj</projectFile>
     <projectFile>Semester1_25-26/Semester1_25-26.csproj</projectFile>
+    <projectFile profileName="http">Socket_Sender/Socket_Sender.csproj</projectFile>
+    <projectFile profileName="https">Socket_Sender/Socket_Sender.csproj</projectFile>
+    <projectFile profileName="http">Sockets/Sockets.csproj</projectFile>
+    <projectFile profileName="https">Sockets/Sockets.csproj</projectFile>
     <projectFile>Thread-Safety/Thread-Safety.csproj</projectFile>
     <projectFile>TrainSim/TrainSim.csproj</projectFile>
   </component>
@@ -16,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed135c54-45bc-42a1-940f-d081d65a93e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester1_25-26/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester1_25-26/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Async_Blazor_Server/Components/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Async_Blazor_Server/Components/Layout/NavMenu.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Async_Blazor_Server/Components/Pages/Machine_Space_Better.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Async_Blazor_Server/Components/Pages/Machine_Space_Better.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Socket_Sender/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Socket_Sender/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -478,6 +480,7 @@
       <workItem from="1763384727295" duration="2648000" />
       <workItem from="1763638302080" duration="615000" />
       <workItem from="1765450708989" duration="163000" />
+      <workItem from="1765802420024" duration="319000" />
     </task>
     <task id="LOCAL-00001" summary="implemented Threading with 4 threads hardcoded">
       <option name="closed" value="true" />
@@ -695,7 +698,23 @@
       <option name="project" value="LOCAL" />
       <updated>1763386147258</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="added the two socket projects">
+      <option name="closed" value="true" />
+      <created>1765802599942</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1765802599942</updated>
+    </task>
+    <task id="LOCAL-00029" summary="added first code">
+      <option name="closed" value="true" />
+      <created>1765802609704</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1765802609704</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -705,8 +724,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="added the last functionality to count the matched numbers" />
-    <MESSAGE value="thread locker test" />
     <MESSAGE value="Monitor test1" />
     <MESSAGE value="Added the base structure of My Trainsim" />
     <MESSAGE value="First working Train, without stations" />
@@ -730,7 +747,9 @@
     <MESSAGE value="fixed by changing the rendermode - all run independetly" />
     <MESSAGE value="working simulation" />
     <MESSAGE value="starting work on a better animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="starting work on a better animation" />
+    <MESSAGE value="added the two socket projects" />
+    <MESSAGE value="added first code" />
+    <option name="LAST_COMMIT_MESSAGE" value="added first code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
