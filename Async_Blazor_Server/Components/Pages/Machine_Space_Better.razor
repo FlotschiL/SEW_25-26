@@ -1,4 +1,4 @@
-@page "/machineAnimation"
+@page "/machineAnimationBetter"
 @using System.Reflection.PortableExecutable
 @using System.Threading
 @rendermode InteractiveServer
@@ -101,9 +101,10 @@
             await semCrane.WaitAsync();
             await Move("Storage", "MachineA", "180px");
             semA.Release();
+            await Move("MachineA", "Storage", "0px");
 
             await semCrane.WaitAsync();
-            await Move("MachineA", "MachineB", "325px");
+            await Move("Storage", "MachineB", "325px");
             semB.Release();
 
             await semReturn.WaitAsync();
