@@ -6,34 +6,36 @@ namespace Socket_Sender;
 
 public class FirstSocket
 {
+    public TcpListener listener;
     public FirstSocket()
     {
-        int port = 5000;
-        TcpListener listener = new TcpListener(IPAddress.Any, port);
+        int port = 2025;
+        listener = new TcpListener(IPAddress.Loopback, port);
 
         listener.Start();
         Console.WriteLine($"Server listening on port {port}...");
-
-        using TcpClient client = listener.AcceptTcpClient();
-        Console.WriteLine("Client connected.");
-
-        using NetworkStream stream = client.GetStream();
-
-        byte[] buffer = new byte[1024];
-        int bytesRead;
-
-        while ((bytesRead = stream.Read(buffer, 0, buffer.Length)) > 0)
+        int count = 5;
+        for (int i = 0; i < count; i++)
         {
-            string received = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-            Console.WriteLine($"Received: {received}");
+            new Thread(() => Service()).Start();
         }
 
-        Console.WriteLine("Client disconnected.");
-        listener.Stop();
     }
 
-    public void Service()//echo client
+    public void Service()//echo socket
     {
-        
+        while (true)
+        {
+            Socket socket = listener.AcceptSocket();
+            Console.WriteLine($"Connected: {socket.RemoteEndPoint}");
+            Stream stream = new NetworkStream(socket);
+            StreamReader sr = new StreamReader(stream);
+            StreamWriter sw = new StreamWriter(stream);
+            sw.AutoFlush = true;
+            string input = sr.ReadLine();
+            Console.WriteLine($"Client requested: {input}");
+            sw.WriteLine(input.ToUpper());
+            socket.Close();
+        }
     }
 }

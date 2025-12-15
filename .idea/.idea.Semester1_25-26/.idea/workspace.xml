@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed135c54-45bc-42a1-940f-d081d65a93e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Socket_Sender/FirstSocket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sockets/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sockets/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester1_25-26/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester1_25-26/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Socket_Sender/FirstSender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Socket_Sender/FirstSender.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sockets/FirstSocket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sockets/FirstSocket.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +61,8 @@
     <setting file="file://$PROJECT_DIR$/Multithreading_Example/Mulitthread.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Multithreading_Example/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Primzahlen/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Socket_Sender/FirstSocket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Socket_Sender/FirstSender.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sockets/FirstSocket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Thread-Safety/Ping.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Thread-Safety/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TrainSim/GPT_Railway.cs" root0="FORCE_HIGHLIGHTING" />
@@ -78,27 +80,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Async_Blazor: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.Async_Blazor_Server: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.Multithreading_Example.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.Thread-Safety.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.TrainSim.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/flo/Documents/GitHub/INSY_25-26&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Async_Blazor: http.executor": "Run",
+    ".NET Launch Settings Profile.Async_Blazor_Server: http.executor": "Run",
+    ".NET Launch Settings Profile.Sockets: http.executor": "Run",
+    ".NET Project.Multithreading_Example.executor": "Run",
+    ".NET Project.Thread-Safety.executor": "Run",
+    ".NET Project.TrainSim.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/flo/Documents/GitHub/INSY_25-26",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Sockets: http">
     <configuration name="Multithreading_Example" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -482,7 +485,7 @@
       <workItem from="1763384727295" duration="2648000" />
       <workItem from="1763638302080" duration="615000" />
       <workItem from="1765450708989" duration="163000" />
-      <workItem from="1765802420024" duration="682000" />
+      <workItem from="1765802420024" duration="1909000" />
     </task>
     <task id="LOCAL-00001" summary="implemented Threading with 4 threads hardcoded">
       <option name="closed" value="true" />
@@ -724,7 +727,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765802919090</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="added good structure">
+      <option name="closed" value="true" />
+      <created>1765803369232</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1765803369232</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -732,9 +743,19 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added the base structure of My Trainsim" />
     <MESSAGE value="First working Train, without stations" />
     <MESSAGE value="Changed to static" />
     <MESSAGE value="Station Naming" />
@@ -759,7 +780,8 @@
     <MESSAGE value="added the two socket projects" />
     <MESSAGE value="added first code" />
     <MESSAGE value="implemented variable messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented variable messages" />
+    <MESSAGE value="added good structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="added good structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
