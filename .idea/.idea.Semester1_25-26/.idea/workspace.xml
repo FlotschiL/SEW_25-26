@@ -22,28 +22,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed135c54-45bc-42a1-940f-d081d65a93e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/EF_introduction/EF_introduction.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EF_introduction/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sockets/WebSocket.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sockets/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sockets/b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ef_codeFirst/Example.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ef_codeFirst/ExampleContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ef_codeFirst/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ef_codeFirst/ef_codeFirst.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ef_introduction/Dept.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ef_introduction/Emp.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ef_introduction/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ef_introduction/ScottnewContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ef_introduction/ef_introduction.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ef_introduction/scaffold.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester1_25-26/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester1_25-26/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester1_25-26.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Semester1_25-26.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Socket_Sender/FirstSender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Socket_Sender/FirstSender.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sockets/FirstSocket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sockets/FirstSocket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sockets/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sockets/Program.cs" afterDir="false" />
-    </list>
+    <list default="true" id="ed135c54-45bc-42a1-940f-d081d65a93e3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,32 +81,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Async_Blazor: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.Async_Blazor_Server: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.Sockets: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.EF_introduction.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.Multithreading_Example.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.Thread-Safety.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.TrainSim.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.ef_introduction.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/flo/Documents/GitHub/INSY_25-26&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Async_Blazor: http.executor": "Run",
+    ".NET Launch Settings Profile.Async_Blazor_Server: http.executor": "Run",
+    ".NET Launch Settings Profile.Socket_Sender: https.executor": "Run",
+    ".NET Launch Settings Profile.Sockets: http.executor": "Run",
+    ".NET Project.EF_introduction.executor": "Run",
+    ".NET Project.Multithreading_Example.executor": "Run",
+    ".NET Project.Thread-Safety.executor": "Run",
+    ".NET Project.TrainSim.executor": "Run",
+    ".NET Project.ef_introduction.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/flo/Documents/GitHub/INSY_25-26",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Sockets: http">
     <configuration name="Multithreading_Example" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -526,7 +506,7 @@
       <workItem from="1768228098891" duration="778000" />
       <workItem from="1768376490986" duration="52000" />
       <workItem from="1768467508719" duration="825000" />
-      <workItem from="1768831732065" duration="293000" />
+      <workItem from="1768831732065" duration="640000" />
     </task>
     <task id="LOCAL-00001" summary="implemented Threading with 4 threads hardcoded">
       <option name="closed" value="true" />
@@ -784,7 +764,39 @@
       <option name="project" value="LOCAL" />
       <updated>1765804525784</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="started entity framework">
+      <option name="closed" value="true" />
+      <created>1768832287020</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1768832287020</updated>
+    </task>
+    <task id="LOCAL-00034" summary="finished ef scaffolding example">
+      <option name="closed" value="true" />
+      <created>1768832317035</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1768832317035</updated>
+    </task>
+    <task id="LOCAL-00035" summary="did the ef code first aproach">
+      <option name="closed" value="true" />
+      <created>1768832354494</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1768832354494</updated>
+    </task>
+    <task id="LOCAL-00036" summary="back to work on the sockets">
+      <option name="closed" value="true" />
+      <created>1768832363417</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1768832363417</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -805,10 +817,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Changed to static" />
-    <MESSAGE value="Station Naming" />
-    <MESSAGE value="Added Lock and Unlocking of threads" />
-    <MESSAGE value="Started introducing Threads" />
     <MESSAGE value="Debuged more" />
     <MESSAGE value="redid my approach, cleaner, simpler" />
     <MESSAGE value="gpt railway" />
@@ -830,7 +838,11 @@
     <MESSAGE value="implemented variable messages" />
     <MESSAGE value="added good structure" />
     <MESSAGE value="added the Thread version" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the Thread version" />
+    <MESSAGE value="started entity framework" />
+    <MESSAGE value="finished ef scaffolding example" />
+    <MESSAGE value="did the ef code first aproach" />
+    <MESSAGE value="back to work on the sockets" />
+    <option name="LAST_COMMIT_MESSAGE" value="back to work on the sockets" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
