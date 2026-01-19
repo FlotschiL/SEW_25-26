@@ -6,7 +6,9 @@ class TcpServer
     {
         //FirstSocket s = new FirstSocket();
         //valid browser HTTP
-        SimpleHttpServer server = new SimpleHttpServer();
-        server.Start();
+        //SimpleHttpServer server = new SimpleHttpServer();
+        //server.Start();
+        HTTPFileServer httpServer = new HTTPFileServer();
+        httpServer.Start();
     }
 }
