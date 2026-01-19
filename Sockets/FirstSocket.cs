@@ -2,7 +2,7 @@ using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
-namespace Socket_Sender;
+namespace Sockets;
 
 public class FirstSocket
 {
@@ -27,15 +27,26 @@ public class FirstSocket
         while (true)
         {
             Socket socket = listener.AcceptSocket();
-            Console.WriteLine($"Connected: {socket.RemoteEndPoint}");
-            Stream stream = new NetworkStream(socket);
-            StreamReader sr = new StreamReader(stream);
-            StreamWriter sw = new StreamWriter(stream);
-            sw.AutoFlush = true;
-            string input = sr.ReadLine();
-            Console.WriteLine($"Client requested: {input}");
-            sw.WriteLine(input.ToUpper());
-            socket.Close();
+            try
+            {
+                Console.WriteLine($"Connected: {socket.RemoteEndPoint}");
+                Stream stream = new NetworkStream(socket);
+                StreamReader sr = new StreamReader(stream);
+                StreamWriter sw = new StreamWriter(stream);
+                sw.AutoFlush = true;
+                string input = sr.ReadLine();
+                Console.WriteLine($"Client requested: {input}");
+                sw.WriteLine(input.ToUpper());
+                socket.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Broken: " + socket.RemoteEndPoint);
+            }
+            finally
+            {
+                socket.Close();
+            }
         }
     }
 }

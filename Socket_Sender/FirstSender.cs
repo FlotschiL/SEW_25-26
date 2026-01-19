@@ -14,16 +14,18 @@ public class FirstSender
         client.Connect(serverIp, port);
         Console.WriteLine(client.Client.LocalEndPoint);
         using NetworkStream stream = client.GetStream();
-
-
         StreamReader sr = new StreamReader(stream);
         StreamWriter sw = new StreamWriter(stream);
         sw.AutoFlush = true;
-        sw.WriteLine(args[0]);
-        string response = sr.ReadLine();
-        
-        Console.WriteLine("Message: " + response);
-        
+        while (true)
+        {
+
+            sw.WriteLine(Console.ReadLine());
+            string response = sr.ReadLine();
+
+            Console.WriteLine("Message: " + response);
+        }
+
         stream.Close();
         client.Close();
     }

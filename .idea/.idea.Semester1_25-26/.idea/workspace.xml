@@ -5,6 +5,7 @@
     <projectFile profileName="https">Async_Blazor/Async_Blazor.csproj</projectFile>
     <projectFile profileName="http">Async_Blazor_Server/Async_Blazor_Server.csproj</projectFile>
     <projectFile profileName="https">Async_Blazor_Server/Async_Blazor_Server.csproj</projectFile>
+    <projectFile>EF_introduction/EF_introduction.csproj</projectFile>
     <projectFile>Multithreading_Example/Multithreading_Example.csproj</projectFile>
     <projectFile>Primzahlen/Primzahlen.csproj</projectFile>
     <projectFile>Semester1_25-26/Semester1_25-26.csproj</projectFile>
@@ -14,15 +15,34 @@
     <projectFile profileName="https">Sockets/Sockets.csproj</projectFile>
     <projectFile>Thread-Safety/Thread-Safety.csproj</projectFile>
     <projectFile>TrainSim/TrainSim.csproj</projectFile>
+    <projectFile>ef_codeFirst/ef_codeFirst.csproj</projectFile>
+    <projectFile>ef_introduction/ef_introduction.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed135c54-45bc-42a1-940f-d081d65a93e3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/EF_introduction/EF_introduction.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EF_introduction/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sockets/WebSocket.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sockets/a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sockets/b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ef_codeFirst/Example.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ef_codeFirst/ExampleContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ef_codeFirst/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ef_codeFirst/ef_codeFirst.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ef_introduction/Dept.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ef_introduction/Emp.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ef_introduction/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ef_introduction/ScottnewContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ef_introduction/ef_introduction.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ef_introduction/scaffold.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester1_25-26/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester1_25-26/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester1_25-26.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Semester1_25-26.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Socket_Sender/FirstSender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Socket_Sender/FirstSender.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sockets/FirstSocket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sockets/FirstSocket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sockets/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sockets/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,13 +68,11 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/729d9a4cc4d14fd8892315623acbb0ffe26400/06/009d9901/SemaphoreSlim.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/729d9a4cc4d14fd8892315623acbb0ffe26400/2d/716a8f4c/CastHelpers.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ecbc3d65bb0342a3883ed0ba79dac3a763000/80/d74b0114/RenderMode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Async_Blazor/Layout/NavMenu.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Async_Blazor/Pages/Sieve_space.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Async_Blazor/_Imports.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Async_Blazor_Server/Components/Pages/Machine_Space_Better.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EF_introduction/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Multithreading_Example/Diagramm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Multithreading_Example/KillianThread.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Multithreading_Example/MachosThreadExample.cs" root0="FORCE_HIGHLIGHTING" />
@@ -63,6 +81,7 @@
     <setting file="file://$PROJECT_DIR$/Primzahlen/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Socket_Sender/FirstSender.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Sockets/FirstSocket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sockets/WebSocket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Thread-Safety/Ping.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Thread-Safety/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TrainSim/GPT_Railway.cs" root0="FORCE_HIGHLIGHTING" />
@@ -70,6 +89,9 @@
     <setting file="file://$PROJECT_DIR$/TrainSim/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TrainSim/Railway.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TrainSim/Railway2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ef_codeFirst/Example.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ef_codeFirst/ExampleContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ef_codeFirst/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -80,38 +102,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.Async_Blazor: http.executor": "Run",
-    ".NET Launch Settings Profile.Async_Blazor_Server: http.executor": "Run",
-    ".NET Launch Settings Profile.Sockets: http.executor": "Run",
-    ".NET Project.Multithreading_Example.executor": "Run",
-    ".NET Project.Thread-Safety.executor": "Run",
-    ".NET Project.TrainSim.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/flo/Documents/GitHub/INSY_25-26",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.Async_Blazor: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Async_Blazor_Server: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Sockets: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.EF_introduction.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.Multithreading_Example.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.Thread-Safety.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.TrainSim.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.ef_introduction.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/flo/Documents/GitHub/INSY_25-26&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Sockets: http">
     <configuration name="Multithreading_Example" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
       <option name="MIXED_MODE_DEBUG" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -154,33 +178,8 @@
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
-      <option name="MIXED_MODE_DEBUG" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="AUTO_ATTACH_CHILDREN" value="0" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Primzahlen/Primzahlen.csproj" />
-      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
-      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
-      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="Primzahlen" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="ENV_FILE_PATHS" value="" />
-      <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
       <option name="MIXED_MODE_DEBUG" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -200,10 +199,8 @@
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
       <option name="MIXED_MODE_DEBUG" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -246,10 +243,8 @@
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
       <option name="MIXED_MODE_DEBUG" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -292,10 +287,8 @@
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
       <option name="MIXED_MODE_DEBUG" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -324,6 +317,48 @@
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="AUTO_ATTACH_CHILDREN" value="0" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/TrainSim/TrainSim.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="ef_codeFirst" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ef_codeFirst/ef_codeFirst.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="ef_introduction" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ef_introduction/ef_introduction.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -337,7 +372,6 @@
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Async_Blazor/Async_Blazor.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
       <option name="LAUNCH_PROFILE_NAME" value="http" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
@@ -345,6 +379,7 @@
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
       <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -353,7 +388,6 @@
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Async_Blazor/Async_Blazor.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
       <option name="LAUNCH_PROFILE_NAME" value="https" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
@@ -361,6 +395,7 @@
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
       <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -369,7 +404,6 @@
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Async_Blazor_Server/Async_Blazor_Server.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
       <option name="LAUNCH_PROFILE_NAME" value="http" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
@@ -377,6 +411,7 @@
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
       <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -385,7 +420,6 @@
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Async_Blazor_Server/Async_Blazor_Server.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
       <option name="LAUNCH_PROFILE_NAME" value="https" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
@@ -393,6 +427,7 @@
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
       <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -401,7 +436,6 @@
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Socket_Sender/Socket_Sender.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
       <option name="LAUNCH_PROFILE_NAME" value="http" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
@@ -409,6 +443,7 @@
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
       <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -417,7 +452,6 @@
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Socket_Sender/Socket_Sender.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
       <option name="LAUNCH_PROFILE_NAME" value="https" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
@@ -425,6 +459,7 @@
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
       <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -433,7 +468,6 @@
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Sockets/Sockets.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
       <option name="LAUNCH_PROFILE_NAME" value="http" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
@@ -441,6 +475,7 @@
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
       <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -449,7 +484,6 @@
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Sockets/Sockets.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
       <option name="LAUNCH_PROFILE_NAME" value="https" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
@@ -457,6 +491,7 @@
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
       <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -485,7 +520,13 @@
       <workItem from="1763384727295" duration="2648000" />
       <workItem from="1763638302080" duration="615000" />
       <workItem from="1765450708989" duration="163000" />
-      <workItem from="1765802420024" duration="1909000" />
+      <workItem from="1765802420024" duration="3842000" />
+      <workItem from="1767872360298" duration="1280000" />
+      <workItem from="1768223237346" duration="2848000" />
+      <workItem from="1768228098891" duration="778000" />
+      <workItem from="1768376490986" duration="52000" />
+      <workItem from="1768467508719" duration="825000" />
+      <workItem from="1768831732065" duration="293000" />
     </task>
     <task id="LOCAL-00001" summary="implemented Threading with 4 threads hardcoded">
       <option name="closed" value="true" />
@@ -735,7 +776,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765803369232</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="added the Thread version">
+      <option name="closed" value="true" />
+      <created>1765804525784</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1765804525784</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -756,7 +805,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="First working Train, without stations" />
     <MESSAGE value="Changed to static" />
     <MESSAGE value="Station Naming" />
     <MESSAGE value="Added Lock and Unlocking of threads" />
@@ -781,7 +829,8 @@
     <MESSAGE value="added first code" />
     <MESSAGE value="implemented variable messages" />
     <MESSAGE value="added good structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="added good structure" />
+    <MESSAGE value="added the Thread version" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the Thread version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -813,5 +862,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
