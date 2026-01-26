@@ -24,8 +24,9 @@ public class HTTPFileServer
 
             // Extract path: GET /file.pdf HTTP/1.1 -> file.pdf
             string[] parts = requestLine.Split(' ');
-            string requestedFile = parts[1].TrimStart('/');
-
+            string requestedFile = "wwwroot/" + parts[1].TrimStart('/');
+            Console.WriteLine(File.Exists(requestedFile));
+            Console.WriteLine(requestedFile);
             // Select the appropriate factory
             ResponseFactory factory = GetFactory(requestedFile);
             

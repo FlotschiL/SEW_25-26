@@ -17,12 +17,19 @@
     <projectFile>TrainSim/TrainSim.csproj</projectFile>
     <projectFile>ef_codeFirst/ef_codeFirst.csproj</projectFile>
     <projectFile>ef_introduction/ef_introduction.csproj</projectFile>
+    <projectFile>web_factory/web_factory.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed135c54-45bc-42a1-940f-d081d65a93e3" name="Changes" comment="" />
+    <list default="true" id="ed135c54-45bc-42a1-940f-d081d65a93e3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester1_25-26/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester1_25-26/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_factory/classes/HTTPFileServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/web_factory/classes/HTTPFileServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_factory/sample3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/web_factory/wwwroot/sample3.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_factory/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/web_factory/wwwroot/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_factory/web_factory.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/web_factory/web_factory.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +58,6 @@
     <setting file="file://$PROJECT_DIR$/Async_Blazor/Pages/Sieve_space.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Async_Blazor/_Imports.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Async_Blazor_Server/Components/Pages/Machine_Space_Better.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/EF_introduction/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Multithreading_Example/Diagramm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Multithreading_Example/KillianThread.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Multithreading_Example/MachosThreadExample.cs" root0="FORCE_HIGHLIGHTING" />
@@ -60,6 +66,8 @@
     <setting file="file://$PROJECT_DIR$/Primzahlen/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Socket_Sender/FirstSender.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Sockets/FirstSocket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sockets/HTTPFileServer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sockets/SimpleImageServer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Sockets/WebSocket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Thread-Safety/Ping.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Thread-Safety/Program.cs" root0="FORCE_HIGHLIGHTING" />
@@ -71,6 +79,12 @@
     <setting file="file://$PROJECT_DIR$/ef_codeFirst/Example.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ef_codeFirst/ExampleContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ef_codeFirst/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ef_introduction/Blog.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ef_introduction/BlogContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ef_introduction/Post.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/web_factory/Factories/ResponseFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/web_factory/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/web_factory/classes/HttpResponse.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -92,6 +106,7 @@
     ".NET Project.Thread-Safety.executor": "Run",
     ".NET Project.TrainSim.executor": "Run",
     ".NET Project.ef_introduction.executor": "Run",
+    ".NET Project.web_factory.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -108,7 +123,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.Sockets: http">
+  <component name="RunManager" selected=".NET Project.web_factory">
     <configuration name="Multithreading_Example" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -348,6 +363,27 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="web_factory" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/web_factory/web_factory.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="Async_Blazor: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Async_Blazor/Async_Blazor.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
@@ -506,7 +542,10 @@
       <workItem from="1768228098891" duration="778000" />
       <workItem from="1768376490986" duration="52000" />
       <workItem from="1768467508719" duration="825000" />
-      <workItem from="1768831732065" duration="640000" />
+      <workItem from="1768831732065" duration="948000" />
+      <workItem from="1768832929407" duration="332000" />
+      <workItem from="1769073077300" duration="1245000" />
+      <workItem from="1769432608391" duration="2799000" />
     </task>
     <task id="LOCAL-00001" summary="implemented Threading with 4 threads hardcoded">
       <option name="closed" value="true" />
@@ -796,7 +835,79 @@
       <option name="project" value="LOCAL" />
       <updated>1768832363417</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="finished the simple example">
+      <option name="closed" value="true" />
+      <created>1768832457914</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1768832457914</updated>
+    </task>
+    <task id="LOCAL-00038" summary="finished the TCP example">
+      <option name="closed" value="true" />
+      <created>1768832673761</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1768832673761</updated>
+    </task>
+    <task id="LOCAL-00039" summary="stand 22.01. insy ef big commit">
+      <option name="closed" value="true" />
+      <created>1769434455224</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1769434455225</updated>
+    </task>
+    <task id="LOCAL-00040" summary="image server bonus">
+      <option name="closed" value="true" />
+      <created>1769434481149</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1769434481149</updated>
+    </task>
+    <task id="LOCAL-00041" summary="created new project">
+      <option name="closed" value="true" />
+      <created>1769434509120</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1769434509120</updated>
+    </task>
+    <task id="LOCAL-00042" summary="created a response type">
+      <option name="closed" value="true" />
+      <created>1769434526550</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1769434526550</updated>
+    </task>
+    <task id="LOCAL-00043" summary="started working on the response Factories">
+      <option name="closed" value="true" />
+      <created>1769434553831</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1769434553831</updated>
+    </task>
+    <task id="LOCAL-00044" summary="changed the fileserver from the old project">
+      <option name="closed" value="true" />
+      <created>1769434577024</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1769434577024</updated>
+    </task>
+    <task id="LOCAL-00045" summary="added samples">
+      <option name="closed" value="true" />
+      <created>1769434587786</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1769434587786</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -817,15 +928,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Debuged more" />
-    <MESSAGE value="redid my approach, cleaner, simpler" />
-    <MESSAGE value="gpt railway" />
-    <MESSAGE value="Created the Blazor project" />
-    <MESSAGE value="added UI" />
-    <MESSAGE value="added variables and Sync mode" />
-    <MESSAGE value="added the sieve method (GPT)" />
-    <MESSAGE value="added the thred run - note doesn't work yet" />
-    <MESSAGE value="tried the background worker -" />
     <MESSAGE value="added the async version. doesn't work - like backgroundworker - threads throw error" />
     <MESSAGE value="not working =&gt; standalone not working with async" />
     <MESSAGE value="added the blazor server" />
@@ -842,7 +944,16 @@
     <MESSAGE value="finished ef scaffolding example" />
     <MESSAGE value="did the ef code first aproach" />
     <MESSAGE value="back to work on the sockets" />
-    <option name="LAST_COMMIT_MESSAGE" value="back to work on the sockets" />
+    <MESSAGE value="finished the simple example" />
+    <MESSAGE value="finished the TCP example" />
+    <MESSAGE value="stand 22.01. insy ef big commit" />
+    <MESSAGE value="image server bonus" />
+    <MESSAGE value="created new project" />
+    <MESSAGE value="created a response type" />
+    <MESSAGE value="started working on the response Factories" />
+    <MESSAGE value="changed the fileserver from the old project" />
+    <MESSAGE value="added samples" />
+    <option name="LAST_COMMIT_MESSAGE" value="added samples" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
