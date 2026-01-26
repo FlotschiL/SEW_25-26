@@ -8,7 +8,10 @@ class TcpServer
         //valid browser HTTP
         //SimpleHttpServer server = new SimpleHttpServer();
         //server.Start();
-        HTTPFileServer httpServer = new HTTPFileServer();
-        httpServer.Start();
+        //HTTPFileServer httpServer = new HTTPFileServer();
+        //httpServer.Start();
+        SimpleImageServer server = new SimpleImageServer();
+        server.Start();
+        
     }
 }
