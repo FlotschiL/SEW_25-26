@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wettbewerb", "Wettbewerb\Wettbewerb.csproj", "{DDF48DBC-5FCC-4B28-842C-3AD8F1EC95EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{DA9D13E0-9F0D-4518-8B01-5F4F4AB87F52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDF48DBC-5FCC-4B28-842C-3AD8F1EC95EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDF48DBC-5FCC-4B28-842C-3AD8F1EC95EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDF48DBC-5FCC-4B28-842C-3AD8F1EC95EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDF48DBC-5FCC-4B28-842C-3AD8F1EC95EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA9D13E0-9F0D-4518-8B01-5F4F4AB87F52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA9D13E0-9F0D-4518-8B01-5F4F4AB87F52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA9D13E0-9F0D-4518-8B01-5F4F4AB87F52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA9D13E0-9F0D-4518-8B01-5F4F4AB87F52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

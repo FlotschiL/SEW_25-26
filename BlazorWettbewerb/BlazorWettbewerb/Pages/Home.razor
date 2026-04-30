@@ -1,0 +1,127 @@
+﻿@page "/"
+@implements IDisposable
+@using System.Threading
+
+<style>
+    .clock-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: system-ui, -apple-system, sans-serif;
+        margin: 2rem;
+    }
+
+    .controls {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    input[type="time"] {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+</style>
+
+<div class="clock-container">
+    <svg width="300" height="300" viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="95" stroke="#333" stroke-width="4" fill="#ffffff" />
+
+        @for (int i = 0; i < 60; i++)
+        {
+            double angle = i * 6; // 360 degrees / 60 ticks
+            bool isHourMarker = i % 5 == 0;
+            int length = isHourMarker ? 12 : 5;
+            int strokeWidth = isHourMarker ? 3 : 1;
+
+            <line x1="100" y1="5" x2="100" y2="@(5 + length)" 
+                  stroke="#333" stroke-width="@strokeWidth" 
+                  transform="rotate(@angle, 100, 100)" />
+        }
+
+        <line x1="100" y1="100" x2="100" y2="45" 
+              stroke="#222" stroke-width="5" stroke-linecap="round" 
+              transform="rotate(@HourAngle, 100, 100)" />
+
+        <line x1="100" y1="100" x2="100" y2="25" 
+              stroke="#555" stroke-width="3" stroke-linecap="round" 
+              transform="rotate(@MinuteAngle, 100, 100)" />
+
+        <line x1="100" y1="100" x2="100" y2="15" 
+              stroke="#d32f2f" stroke-width="2" stroke-linecap="round" 
+              transform="rotate(@SecondAngle, 100, 100)" />
+
+        <circle cx="100" cy="100" r="4" fill="#d32f2f" />
+    </svg>
+
+    <div class="controls">
+        <label for="timeInput"><strong>Set Time:</strong></label>
+        <input id="timeInput" type="time" step="1" @bind="DisplayTime" @bind:after="ManualTimeSet" />
+    </div>
+</div>
+
+@code {
+    private DateTime _currentTime = DateTime.Now;
+    
+    // TimeOnly is highly optimized for representing time-of-day data
+    private TimeOnly DisplayTime { get; set; }
+
+    private PeriodicTimer? _timer;
+    private CancellationTokenSource _cts = new();
+
+    // Mathematical calculations for hand rotation angles
+    private double HourAngle => (_currentTime.Hour % 12) * 30 + _currentTime.Minute * 0.5;
+    private double MinuteAngle => _currentTime.Minute * 6 + _currentTime.Second * 0.1;
+    private double SecondAngle => _currentTime.Second * 6;
+
+    protected override void OnInitialized()
+    {
+        DisplayTime = TimeOnly.FromDateTime(_currentTime);
+        StartClock();
+    }
+
+    private async void StartClock()
+    {
+        // PeriodicTimer is the modern, thread-safe approach for async loops in C#
+        _timer = new PeriodicTimer(TimeSpan.FromSeconds(1));
+        try
+        {
+            while (await _timer.WaitForNextTickAsync(_cts.Token))
+            {
+                // Advance the underlying time
+                _currentTime = _currentTime.AddSeconds(1);
+                
+                // Update the input control to reflect the tick
+                DisplayTime = TimeOnly.FromDateTime(_currentTime);
+                
+                // Notify Blazor to re-render the SVG and input
+                StateHasChanged();
+            }
+        }
+        catch (OperationCanceledException)
+        {
+            // Expected behavior when navigating away from the page
+        }
+    }
+
+    private void ManualTimeSet()
+    {
+        // Triggered when the user changes the time in the <input> field.
+        // We override the internal clock with the newly inputted hours, minutes, and seconds.
+        var today = DateTime.Today;
+        _currentTime = new DateTime(today.Year, today.Month, today.Day, 
+                                    DisplayTime.Hour, DisplayTime.Minute, DisplayTime.Second);
+    }
+
+    public void Dispose()
+    {
+        // Clean up unmanaged resources to prevent background ticking and memory leaks
+        _cts.Cancel();
+        _timer?.Dispose();
+        _cts.Dispose();
+    }
+}
