@@ -1,0 +1,44 @@
+﻿@page "/"
+@using MongoDB.Bson
+@using MongoDB.Bson.Serialization.Attributes
+@using WebApplication1
+@inject HttpClient Http
+
+<h3>Inventory</h3>
+
+@if (products == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var product in products)
+        {
+            <tr>
+                <td>@product.Name</td>
+                <td>@product.Price.ToString("C")</td>
+                <td>@product.Category</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Dept>? products;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Adjust the URL to match your API's address
+        products = await Http.GetFromJsonAsync<List<Dept>>("api/products");
+    }
+}
