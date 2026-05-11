@@ -1,12 +1,18 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebApplication1;
-
-public class DeptController : Controller
+[ApiController]
+[Route("api/data")]
+public class DynamicDataController : ControllerBase
 {
-    // GET
-    public IActionResult Index()
+    private readonly DynamicMongoService _mongoService;
+
+    public DynamicDataController(DynamicMongoService mongoService) => 
+        _mongoService = mongoService;
+
+    [HttpGet("{collectionName}")]
+    public async Task<IActionResult> Get(string collectionName)
     {
-        return View();
+        var data = await _mongoService.GetCollectionDataAsync(collectionName);
+        return Ok(data);
     }
 }

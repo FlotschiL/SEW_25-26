@@ -1,44 +1,68 @@
-﻿@page "/"
-@using MongoDB.Bson
-@using MongoDB.Bson.Serialization.Attributes
-@using WebApplication1
+﻿@page "/dynamic-data"
 @inject HttpClient Http
 
-<h3>Inventory</h3>
+<h3>Dynamic Data Viewer</h3>
 
-@if (products == null)
+<div class="mb-3">
+    <input @bind="targetCollection" class="form-control d-inline-block w-auto" placeholder="Collection Name" />
+    <button class="btn btn-primary" @onclick="LoadData">Fetch Data</button>
+</div>
+
+@if (dynamicData != null && dynamicData.Any())
 {
-    <p><em>Loading...</em></p>
-}
-else
-{
-    <table class="table">
+    // Extract headers from the first document's keys
+    var headers = dynamicData.First().Keys.ToList();
+
+    <table class="table table-striped">
         <thead>
         <tr>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Category</th>
+            @foreach (var header in headers)
+            {
+                <th>@header</th>
+            }
         </tr>
         </thead>
         <tbody>
-        @foreach (var product in products)
+        @foreach (var row in dynamicData)
         {
             <tr>
-                <td>@product.Name</td>
-                <td>@product.Price.ToString("C")</td>
-                <td>@product.Category</td>
+                @foreach (var header in headers)
+                {
+                    <td>@(row.ContainsKey(header) ? row[header]?.ToString() : "")</td>
+                }
             </tr>
         }
         </tbody>
     </table>
 }
+else if (isSearching)
+{
+    <p>Loading or no data found...</p>
+}
 
 @code {
-    private List<Dept>? products;
+    private string targetCollection = "";
+    private List<Dictionary<string, object>>? dynamicData;
+    private bool isSearching = false;
 
-    protected override async Task OnInitializedAsync()
+    private async Task LoadData()
     {
-        // Adjust the URL to match your API's address
-        products = await Http.GetFromJsonAsync<List<Dept>>("api/products");
+        if (string.IsNullOrWhiteSpace(targetCollection)) return;
+
+        isSearching = true;
+        try 
+        {
+            dynamicData = await Http.GetFromJsonAsync<List<Dictionary<string, object>>>(
+                $"api/data/{targetCollection}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+            dynamicData = null;
+        }
+        finally 
+        {
+            isSearching = false;
+        }
     }
 }
